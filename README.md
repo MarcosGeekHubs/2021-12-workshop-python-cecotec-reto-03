@@ -6,7 +6,7 @@ Welcome to the **Gilded Rose team**. As you may know, we are a small inn strateg
 
 We have an unfinished system to automatically update inventory. This system began to develop my nephew but now he is dedicated to new adventures. Your task is to finish what he started.
 
-## Preliminary description
+## Preliminary description.
 
 But first, let's introduce the system:
 
