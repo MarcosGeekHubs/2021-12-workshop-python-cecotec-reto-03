@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/16636086/146166917-0e8e7626-9b81-4072-81db-b5d51a7df75f.png)
 
-# Gilded Rose Specifications -
+# Gilded Rose Specifications
 
 Welcome to the **Gilded Rose team**. As you may know, we are a small inn strategically located in a prestigious city, run by the kind Allison. We also buy and sell high-quality merchandise. Unfortunately, our merchandise is declining in quality as the recommended sale date approaches.
 
