@@ -1,47 +1,44 @@
-# Especificaciones de Gilded Rose
+![image](https://user-images.githubusercontent.com/16636086/146166917-0e8e7626-9b81-4072-81db-b5d51a7df75f.png)
 
-Bienvenido al equipo de **Gilded Rose**.
-Como quizá sabes, somos una pequeña posada ubicada estratégicamente en una prestigiosa ciudad, atendida por la amable **Allison**.
-También compramos y vendemos mercadería de alta calidad.
-Por desgracia, nuestra mercadería va bajando de calidad a medida que se aproxima la fecha recomendada de venta.
+# Gilded Rose Specifications
 
-Tenemos un sistema, sin finalizar, para actualizar automáticamente el `inventario`.
-Este sistema lo empezó a desarrollar mi sobrino pero ahora se dedica a nuevas aventuras.
-Tu tarea es acabar lo que él empezó.
+Welcome to the **Gilded Rose team**. As you may know, we are a small inn strategically located in a prestigious city, run by the kind Allison. We also buy and sell high-quality merchandise. Unfortunately, our merchandise is declining in quality as the recommended sale date approaches.
 
-## Descripción preliminar
+We have an unfinished system to automatically update inventory. This system began to develop my nephew but now he is dedicated to new adventures. Your task is to finish what he started.
 
-Pero primero, vamos a introducir el sistema:
+## Preliminary description
 
-* Todos los artículos (`Item`) tienen una propiedad `sellIn` que denota el número de días que tenemos para venderlo
-* Todos los artículos tienen una propiedad `quality` que denota cúan valioso es el artículo
-* Al final de cada día, nuestro sistema tiene que decrementar ambos valores para cada artículo mediante el método `updateQuality`
+But first, let's introduce the system:
 
-Bastante simple, ¿no? Bueno, ahora es donde se pone interesante, necesitamos acabar el sistema y que cumpla estos requisitos:
+* All items (`Item`) have a` sellIn` property that denotes the number of days we have to sell it
+* All items have a `quality` property that denotes how valuable the item is
+* At the end of each day, our system has to decrement both values ​​for each article using the `updateQuality` method
 
-* Una vez que ha pasado la fecha recomendada de venta, la `calidad` se degrada al doble de velocidad
-* La `calidad` de un artículo nunca es negativa
-* El "Queso Brie envejecido" (`Aged brie`) incrementa su `calidad` a medida que se pone viejo
-  * Su `calidad` aumenta en `1` unidad cada día
-  * luego de la `fecha de venta` su `calidad` aumenta `2` unidades por día
-* La `calidad` de un artículo nunca es mayor a `50`
-* El artículo "Sulfuras" (`Sulfuras`), siendo un artículo legendario, no modifica su `fecha de venta` ni se degrada en `calidad`
-* Una `Entrada al Backstage`, como el queso brie, incrementa su `calidad` a medida que la `fecha de venta` se aproxima
-  * si faltan 10 días o menos para el concierto, la `calidad` se incrementa en `2` unidades
-  * si faltan 5 días o menos, la `calidad` se incrementa en `3` unidades
-  * luego de la `fecha de venta` la `calidad` cae a `0`
+Simple enough, huh? Well now is where it gets interesting, we need to finish the system and meet these requirements:
 
-## El requerimiento
+* Once the recommended sell-by date has passed, 'quality' degrades at twice the speed
+* The 'quality' of an item is never negative
+* The "Aged Brie" (`Aged brie`) increases in` quality` as it gets old
+  * Your `quality` increases by` 1` unit every day
+  * after the `sale date` your` quality` increases by `2` units per day
+* The 'quality' of an item is never higher than '50'
+* The article "Sulfuras" (`Sulfuras`), being a legendary article, does not modify its` date of sale` nor does it degrade in `quality`
+* A `Backstage Entry`, such as brie cheese, increases its` quality` as the `sale date` approaches
+  * if the concert is 10 days or less, the `quality` is increased by` 2` units
+  * if there are 5 days or less, the `quality` is increased by` 3` units
+  * after the `sale date` the` quality` drops to `0`
 
-Siéntete libre de realizar cualquier cambio al metodo `updateQuality` y agregar el código que sea necesario, mientras que todo siga funcionando correctamente. Sin embargo, **no alteres el objeto `Item` ni sus propiedades** ya que pertenecen al goblin que está en ese rincón, que en un ataque de ira te va a liquidar de un golpe porque no cree en la cultura de código compartido.
+## The requirement
 
-## Notas finales
+Feel free to make any changes to the `updateQuality` method and add any necessary code, as long as everything continues to work properly. However, ** do not alter the `Item` object or its properties ** as they belong to the goblin in that corner, who in a fit of anger will kill you in one fell swoop because he does not believe in the shared code culture .
 
-Para aclarar: un artículo nunca puede tener una `calidad` superior a `50`, sin embargo las Sulfuras siendo un artículo legendario posee una calidad inmutable de `80`.
+## Final notes
 
-# Ayuda
+To clarify: an article can never have a `quality` higher than` 50`, however the Sulfuras being a legendary article has an immutable quality of `80`.
 
-Lista de articulos
+# Help
+
+List of articles
 
 - +5 Dexterity Vest
 - Aged Brie
